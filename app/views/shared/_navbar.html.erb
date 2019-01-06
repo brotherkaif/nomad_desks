@@ -1,7 +1,7 @@
 <div class="navbar-wagon">
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    <%= image_tag "logo.png", height: 50 %>
+    <h3>DeskNomad</h3>
   <% end %>
 
   <!-- Right Navigation -->
@@ -38,8 +38,9 @@
         </div>
       </div>
     <% else %>
+     <%= link_to "Add spot", "#", class: "navbar-wagon-item navbar-wagon-link" %>
       <!-- Login link (when logged out) -->
-      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to t(".sign_in", default: "Login/Sign Up"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <% end %>
   </div>
 
